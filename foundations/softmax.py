@@ -10,9 +10,7 @@ class Solution:
         # return np.round(your_answer, 4)
         
         n = np.exp(z - max(z))
-        d = 0
-        for i in z:
-            d += np.exp(i - max(z))
+        d = np.sum(np.exp(z - max(z)))
         
         result = n / d
 
